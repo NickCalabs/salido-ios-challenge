@@ -17,12 +17,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        
         loadJSON()
-        dispatch_async(dispatch_get_main_queue(), {
-            self.tableView.reloadData()
-        })
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,22 +50,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.wines.count
+        return 10
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
-        
-        //let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+
+        tableView.reloadData()
         let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         cell.textLabel?.text = self.items[indexPath.row]
+//        cell.textLabel?.text = self.wines[indexPath.row].description
         
         
         return cell
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        println("you selected cell \(indexPath.row)")
+        println("Item: \(indexPath.row)")
     }
 
 

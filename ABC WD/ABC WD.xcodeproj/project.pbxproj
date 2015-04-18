@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0123F7551AE310540001D6D2 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0123F7541AE310540001D6D2 /* ProductDetailViewController.swift */; };
 		01AD8C0D1ADEE418002A5313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD8C0C1ADEE418002A5313 /* AppDelegate.swift */; };
 		01AD8C0F1ADEE418002A5313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD8C0E1ADEE418002A5313 /* ViewController.swift */; };
 		01AD8C121ADEE418002A5313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01AD8C101ADEE418002A5313 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0123F7541AE310540001D6D2 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		01AD8C071ADEE418002A5313 /* ABC WD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABC WD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01AD8C0B1ADEE418002A5313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01AD8C0C1ADEE418002A5313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				01AD8C151ADEE418002A5313 /* LaunchScreen.xib */,
 				01AD8C0A1ADEE418002A5313 /* Supporting Files */,
 				01AD8C301ADF60D8002A5313 /* WineModel.swift */,
+				0123F7541AE310540001D6D2 /* ProductDetailViewController.swift */,
 			);
 			path = "ABC WD";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				01AD8C0F1ADEE418002A5313 /* ViewController.swift in Sources */,
 				01AD8C0D1ADEE418002A5313 /* AppDelegate.swift in Sources */,
 				01AD8C2F1ADEE5F7002A5313 /* Data.swift in Sources */,
+				0123F7551AE310540001D6D2 /* ProductDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,7 @@
 				01AD8C281ADEE419002A5313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01AD8C291ADEE419002A5313 /* Build configuration list for PBXNativeTarget "ABC WDTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				01AD8C2B1ADEE419002A5313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
